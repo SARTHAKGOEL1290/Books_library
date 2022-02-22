@@ -18,6 +18,8 @@ public interface books_dao extends CrudRepository<book,Integer> {
 
 	public Optional<book> findByPrice(int price);
 	
+     
+	
 	//public Optional<book> findBookOptional(int bid);
 
 }

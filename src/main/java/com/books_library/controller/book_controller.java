@@ -28,7 +28,9 @@ public class book_controller {
 	@GetMapping("/books")
 	public ResponseEntity<Iterable<book>> getAllbooks()
 	{
-		Iterable<book> b2 =  service.findallbooks(); ;
+		
+		System.out.println("Changes on commit");
+		Iterable<book> b2 =  service.findallbooks();
 		try {
 		 
 		  if(b2== null)
